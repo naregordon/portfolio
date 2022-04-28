@@ -1,0 +1,56 @@
+@import "~@/assets/scss/_reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+body {
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+
+  @include mobile-only {
+    font-size: 10px;
+  }
+}
+
+h1 {
+  font-family: "Staatliches", cursive;
+
+  font-size: clamp(1.2rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Staatliches", cursive;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+
+  @include mobile-only {
+    margin-bottom: 0.8rem;
+  }
+}
+
+p {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+button,
+a,
+[tabindex="0"] {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed yellow;
+  }
+}
