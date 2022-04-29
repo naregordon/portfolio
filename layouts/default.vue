@@ -53,10 +53,20 @@ export default {
   display: flex;
   flex: 1;
   height: 100vh;
-  position: sticky;
-  top: 0;
+  position: relative;
+
   transition: all 700ms ease;
   z-index: 2;
+
+  .scrolled & {
+    top: 2vh;
+
+    &::before {
+      transition: transform 2s ease;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   &__inner {
     background: black;
@@ -88,14 +98,6 @@ export default {
 
     @include mobile-only {
       width: 1.5rem;
-    }
-  }
-
-  .scrolled & {
-    &::before {
-      transition: transform 2s ease;
-      opacity: 1;
-      transform: translateY(0);
     }
   }
 }
