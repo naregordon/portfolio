@@ -17,13 +17,13 @@ export default {
     image: {
       type: String,
       required: true,
-      default: "",
+      default: ""
     },
     url: {
       type: String,
       required: true,
-      default: "",
-    },
+      default: ""
+    }
   },
   computed: {
     imgSrc() {
@@ -39,8 +39,8 @@ export default {
       } catch (error) {
         return null;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -51,7 +51,7 @@ export default {
   flex: 50%;
   flex-grow: 0;
   margin-bottom: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-right: 1rem;
 
   @include mobile-only {
@@ -68,24 +68,20 @@ export default {
     position: relative;
     overflow: hidden;
     transform: scale(1);
-    background: black;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    color: white;
-    transition: all 700ms ease;
+    background: white;
+    border-radius: 30px;
+    color: black;
+    transition: all 300ms ease;
     border: 1px solid black;
 
     &:hover,
     &:focus-visible {
-      img {
-        border-radius: 0;
-        width: 100px;
-        border-color: transparent;
-      }
+      background: black;
+      color: white;
+      border-bottom-right-radius: 5px;
+
       .project-tile__icon {
         transform: translateX(0);
-        opacity: 1;
       }
     }
   }
@@ -99,20 +95,21 @@ export default {
     right: 0.5rem;
     bottom: 0.5rem;
     transform: translateX(200%);
-    transition: all 300ms ease;
-    opacity: 0;
+    transition: all 300ms ease 100ms;
+    color: white;
   }
 
   img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 0;
+    width: 100px;
     object-fit: contain;
     margin-right: 1rem;
     background: white;
-    border: 1px solid black;
     image-rendering: -webkit-optimize-contrast;
     transition: all 300ms ease;
+    border-right: 1px solid black;
 
     @include mobile-only {
       width: 50px;

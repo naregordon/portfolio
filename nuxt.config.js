@@ -8,11 +8,24 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "I love building great user interfaces",
+        content: "I love building great user interfaces"
       },
       { name: "format-detection", content: "telephone=no" },
+      {
+        property: "og:title",
+        content: "Lucas Haladjian - Front-end developer"
+      },
+      { property: "og:image", content: "/share.jpeg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "600" },
+      { property: "og:image:height", content: "450" },
+      {
+        property: "og:url",
+        content: "http://haladjian.dev/"
+      },
+      { name: "twitter:card", content: "summary_large_image" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -34,20 +47,20 @@ export default {
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
-    "@nuxt/content",
+    "@nuxt/content"
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: "/",
+    baseURL: "/"
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en",
-    },
+      lang: "en"
+    }
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -56,11 +69,11 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     loaders: {
-      scss: { sourceMap: false },
+      scss: { sourceMap: false }
     },
     styleResources: {
       hoistUseStatements: true,
-      scss: ["@/assets/scss/dna.scss"],
-    },
-  },
+      scss: ["@/assets/scss/dna.scss"]
+    }
+  }
 };
