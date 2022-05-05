@@ -21,21 +21,21 @@ import lottieFile from "@/assets/lotties/developer.json";
 
 export default {
   components: {
-    Lottie
+    Lottie,
   },
   data() {
     return {
       defaultOptions: {
-        animationData: lottieFile
+        animationData: lottieFile,
       },
-      animationSpeed: 1
+      animationSpeed: 1,
     };
   },
   methods: {
     handleAnimation: function (anim) {
       this.anim = anim;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -55,11 +55,6 @@ export default {
     opacity: 0;
     width: 100%;
     max-width: 400px;
-    height: auto !important;
-
-    @include mobile-only {
-      top: 40%;
-    }
 
     .scrolled & {
       transition: opacity 700ms ease 1.4s;
@@ -90,7 +85,7 @@ export default {
     font-family: "Staatliches", cursive;
 
     @include mobile-only {
-      top: 70vh;
+      top: 75vh;
     }
 
     .scrolled & {

@@ -4,7 +4,7 @@ title: Getting started
 description: "Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS."
 ---
 
-### Latest projects
+### Projects I worked on
 
 <ul>
   <project-tile image="cartier.jpeg" url="https://www.cartierwatchmakingencounters.com/">
@@ -28,7 +28,7 @@ description: "Empower your NuxtJS application with @nuxt/content module: write i
   </project-tile>
 
   <project-tile image="optus.jpeg" url="https://www.optus.com.au/" >
-    Optus - Tablet store app
+    Optus - Store app
   </project-tile>
 
 </ul>

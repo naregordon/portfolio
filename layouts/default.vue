@@ -17,7 +17,7 @@
 export default {
   data() {
     return {
-      scrollY: 0
+      scrollY: 0,
     };
   },
   mounted() {
@@ -31,8 +31,8 @@ export default {
   methods: {
     handleScroll(event) {
       this.scrollY = window.scrollY;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -53,13 +53,13 @@ export default {
   display: flex;
   flex: 1;
   height: 100vh;
-  position: sticky;
-  top: 0;
+  position: relative;
+
   transition: all 700ms ease;
   z-index: 2;
 
   .scrolled & {
-    height: 80vh;
+    top: 2vh;
 
     &::before {
       transition: transform 2s ease;
@@ -87,7 +87,7 @@ export default {
     content: "";
     display: block;
     width: 3rem;
-    height: 100vh;
+    height: 100%;
     left: 100%;
     position: absolute;
     background: $main-color;
@@ -120,11 +120,9 @@ export default {
 
 .scroll-arrows {
   position: fixed;
-  right: 0;
+  right: 3rem;
   z-index: 2;
   bottom: 2rem;
-  width: 100%;
-  text-align: center;
   animation: fadeIn 1s ease 2s forwards;
   opacity: 0;
 
@@ -138,7 +136,6 @@ export default {
   .scrolled & {
     animation: none;
     opacity: 0;
-    z-index: -1;
   }
 }
 </style>
