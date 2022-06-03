@@ -1,0 +1,35 @@
+{
+  "AboutBlock": {
+    "description": "Auto imported from components/AboutBlock.vue"
+  },
+  "BlockWrapper": {
+    "description": "Auto imported from components/BlockWrapper.vue"
+  },
+  "ContactBlock": {
+    "description": "Auto imported from components/ContactBlock.vue"
+  },
+  "ExperienceBlock": {
+    "description": "Auto imported from components/ExperienceBlock.vue"
+  },
+  "HeaderContent": {
+    "description": "Auto imported from components/HeaderContent.vue"
+  },
+  "IntroBlock": {
+    "description": "Auto imported from components/IntroBlock.vue"
+  },
+  "MainFooter": {
+    "description": "Auto imported from components/MainFooter.vue"
+  },
+  "ProjectTile": {
+    "description": "Auto imported from components/ProjectTile.vue"
+  },
+  "ScrollArrows": {
+    "description": "Auto imported from components/ScrollArrows.vue"
+  },
+  "SkillsBlock": {
+    "description": "Auto imported from components/SkillsBlock.vue"
+  },
+  "AtomsBaseLink": {
+    "description": "Auto imported from components/atoms/BaseLink.vue"
+  }
+}
